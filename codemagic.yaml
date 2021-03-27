@@ -8,7 +8,7 @@ workflows:
         name: Contactless Shopping
         environment:
             vars:
-                XCODE_WORKSPACE: "ios/App/Contactless Shopping.xcworkspace" # <- 'App' is the default workspace name for Capacitor projects
+                XCODE_WORKSPACE: "platforms/ios/Contactless Shopping.xcworkspace" # <- 'App' is the default workspace name for Capacitor projects
                 XCODE_SCHEME: "Contactless Shopping" # <- 'App' is the default Scheme name for Capacitor projects
             node: latest
         scripts:
