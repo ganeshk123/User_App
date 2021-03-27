@@ -1,0 +1,74 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "OKHTTP_VERSION": "3.10.0",
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-camera": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-plugin-wkwebviewxhrfix": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "cordova.plugins.diagnostic": {
+      "ANDROIDX_VERSION": "1.+",
+      "PACKAGE_NAME": "cs.contactless.user"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "cs.contactless.user"
+    }
+  }
+}

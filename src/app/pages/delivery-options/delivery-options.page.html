@@ -1,0 +1,64 @@
+<!-- 
+   Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic 5 groceryee app
+  Created : 10-Sep-2020
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2020-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title> {{util.getString('Delivery Options')}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="header"> {{util.getString('Delivery from')}} </p>
+  <ion-list lines="none" class="delivery">
+    <ion-radio-group [(ngModel)]="deliveryOption">
+      <ion-item>
+        <ion-thumbnail>
+          <img src="assets/imgs/home.png" />
+        </ion-thumbnail>
+        <ion-label> {{util.getString('At Home')}} </ion-label>
+        <ion-radio value="home" slot="end" mode="md"></ion-radio>
+      </ion-item>
+      
+    </ion-radio-group>
+  </ion-list>
+
+  <div>
+    <p class="header"> {{util.getString('Receive at')}} </p>
+    <div class="ion-activatable" style="position: relative;overflow: hidden;padding: 10px 20px;"
+      (click)="openTime($event)">
+      <ion-label> {{time}} </ion-label>
+      <ion-ripple-effect type="bounded"></ion-ripple-effect>
+    </div>
+  </div>
+
+  
+
+
+
+</ion-content>
+
+<ion-footer>
+  <div class="btm">
+    
+    <div (click)="payment()" class="btmbar">
+      <ion-label>{{cart.cart.length}} {{util.getString('Items')}}:
+        <span *ngIf="util.cside ==='left'"> {{util.currecny}} {{cart.totalPrice}}</span>
+        <span *ngIf="util.cside ==='right'">{{cart.totalPrice}} {{util.currecny}} </span>
+      </ion-label>
+      <ion-label>{{util.getString('Payment')}}
+        <ion-icon name="exit-outline"></ion-icon>
+      </ion-label>
+    </div>
+  </div>
+</ion-footer>

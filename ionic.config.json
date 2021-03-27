@@ -1,0 +1,7 @@
+{
+  "name": "contactlessshopping",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
