@@ -5,11 +5,11 @@
 workflows:
     # Ionic Capacitor workflows
     ionic-capacitor-ios-app:
-        name: Ionic Capacitor iOS App
+        name: Contactless Shopping
         environment:
             vars:
-                XCODE_WORKSPACE: "ios/App/App.xcworkspace" # <- 'App' is the default workspace name for Capacitor projects
-                XCODE_SCHEME: "App" # <- 'App' is the default Scheme name for Capacitor projects
+                XCODE_WORKSPACE: "ios/App/Contactless Shopping.xcworkspace" # <- 'App' is the default workspace name for Capacitor projects
+                XCODE_SCHEME: "Contactless Shopping" # <- 'App' is the default Scheme name for Capacitor projects
             node: latest
         scripts:
             - npm install     
@@ -23,7 +23,7 @@ workflows:
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     ionic-capacitor-android-app:
-        name: Ionic Capacitor Android App
+        name: Contactless Shopping
         environment:
             node: latest
         scripts:
@@ -37,11 +37,11 @@ workflows:
             - android/app/build/outputs/**/*.apk
     # Ionic Cordova workflows
     ionic-cordova-ios-app:
-        name: Ionic Cordova iOS App
+        name: Contactless Shopping
         environment:
             vars:
-                XCODE_WORKSPACE: "{{ ADD WORKSPACE NAME HERE }}"
-                XCODE_SCHEME: "{{ ADD SCHEME NAME HERE }}"
+                XCODE_WORKSPACE: "{{ Contactless Shopping }}"
+                XCODE_SCHEME: "{{ Contactless Shopping }}"
             node: latest
         scripts: 
             - |
@@ -62,7 +62,7 @@ workflows:
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     ionic-cordova-android-app:
-        name: Ionic Cordova Android App
+        name: Contactless Shopping
         environment:
             node: latest
         scripts: 
